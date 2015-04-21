@@ -24,7 +24,7 @@
 <?php 
         } //fin si
 ?>
-            <a href ="#pageoffre" ><?php echo $uneOffre['date']." à ".$uneOffre['heure']." pour ".$uneOffre['retour']?> </a>
+            <a href ="#pageoffre" ><?php echo $uneOffre['date']." à ".$uneOffre['heure']." pour ".$uneOffre['retour']?> </a></br>
 <?php 
     } //fin foreach
 ?>   
