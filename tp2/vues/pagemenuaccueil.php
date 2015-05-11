@@ -8,7 +8,7 @@ include "vues/logo.html";
         <ul data-role="listview" >
             <li><a id="btn_offres_arrive" href="index.php?action=gereroffresdepartentreprise" rel="external">Voir toutes les offres arrivée entreprise</a></li>
             <li><a id="btn_offres_depart" href="index.php?action=gereroffresarriveeentreprise" rel="external" >Voir toutes les offres départ entreprise</a></li>
-            <li><a id="btn_mes_offres" href="#">Gérer mes offres</a></li>
+            <li><a id="btn_mes_offres" href="index.php?action=gerermesoffres" rel="external">Gérer mes offres</a></li>
         </ul>
     </div>
  </div>

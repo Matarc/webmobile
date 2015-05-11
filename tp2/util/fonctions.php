@@ -167,5 +167,29 @@ function GetLesUsers(){
    return $tab;
 }
 
+function getIdByUser($login)
+{
+    $users = GetLesUsers();
+    foreach ($users as $user)
+    {
+        if ($user['user'] == $login)
+            return $user['id'];
+    }
+    return null;
+}
+
+function getMesOffres($offres, $login)
+{
+    $mes_offres = array();
+    foreach ($offres as $offre)
+    {
+        if ($offre['idchauffeur'] == getIdByUser($login))
+        {
+            $mes_offres[] = $offre;
+        }
+    }
+    return $mes_offres;
+}
+
 
 ?>

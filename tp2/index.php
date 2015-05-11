@@ -25,6 +25,12 @@ switch($action)
         include "vues/pageoffresoffertes.php";
         include "vues/pageoffre.php";
         break;
+    case 'gerermesoffres':
+        $_SESSION['mesoffres'] = true;
+        $_SESSION['offres'] = array_merge(getLesOffresDepartEntreprise(), getLesOffresArriveeEntreprise());
+        include "vues/pageoffresoffertes.php";
+        include "vues/pageoffre.php";
+        break;
 
 }
 

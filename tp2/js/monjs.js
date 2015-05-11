@@ -108,6 +108,10 @@ $(function(){
         }
     };
 
+    $("#btn_supprimer").click(function(){
+        console.log("Bouton supprimer : ");
+        $('label[class*="ui-checkbox-on"]').parent().remove();
+    });
 }); // fin fonction principale/*
 
 
