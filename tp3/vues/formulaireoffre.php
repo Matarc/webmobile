@@ -17,23 +17,23 @@ include "vues/entetepageavecboutonretour.html";
             </select></br>
             <fieldset data-role="controlgroup" data-type="horizontal" data-role="fieldcontain" id="jouroffre">
             <legend>Jour proposé</legend>
-            <input type="radio" name="lundi" id="lundi" value="lundi" />
+            <input type="radio" name="jouroffre" id="lundi" value="lundi" />
             <label for="lundi">Lu</label>
 
-            <input type="radio" name="mardi" id="mardi" value="mardi"  />
+            <input type="radio" name="jouroffre" id="mardi" value="mardi"  />
             <label for="mardi">Ma</label>
 
-            <input type="radio" name="mercredi" id="mercredi" value="mercredi"  />
+            <input type="radio" name="jouroffre" id="mercredi" value="mercredi"  />
             <label for="mercredi">Me</label>
 
-            <input type="radio" name="jeudi" id="jeudi" value="jeudi"  />
+            <input type="radio" name="jouroffre" id="jeudi" value="jeudi"  />
             <label for="jeudi">Je</label>
-            <input type="radio" name="vendredi" id="vendredi" value="vendredi"  />
+            <input type="radio" name="jouroffre" id="vendredi" value="vendredi"  />
             <label for="vendredi">Ve</label>
             </fieldset>
             <label for="heuredepart">Indiquer l'heure de départ :</label>
             <input type="range" name="heuredepart" id="heuredepart" value="6" min="6" max="23" /></br>
-            <label for="minutedepart">Indiquer l'heure de départ :</label>
+            <label for="minutedepart">Préciser les minutes :</label>
             <input type="range" name="minutedepart" id="minutedepart" value="0" min="0" max="55" step="5"/></br>
             <label for="date" style="display:none" id="labeldate">Date</label>
             <input type="date" name="date" id="date" class="required date" value="" placeholder="05/12/2014" style="display:none"/>

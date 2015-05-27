@@ -59,10 +59,12 @@ $(function(){
             case 'on':
                 $('#labeldate').css('display', '');
                 $('#date').css('display', '');
+                $('#jouroffre').css('display', 'none');
                 break;
             case 'off':
                 $('#labeldate').css('display', 'none');
                 $('#date').css('display', 'none');
+                $('#jouroffre').css('display', '');
                 break;
         }
     });
@@ -73,36 +75,18 @@ $(function(){
 
     $('#formoffre').validate({
         submitHandler: function(form) {
-            var depart_value = $("#sliderdepart").slider().val();
-            var offre_value = $("#slideroffre").slider().val();
-            var date = offre_value == 'off' ? null : $('#date').val();
-            var ptramassage = new Array();
-            if (depart_value == 'off')
-            {
-                var counter_ptramassage = $('#listinputptramassage').children(':input').length;
-                console.log(array_input);
-                for (var i = 0; i < counter_ptramassage; ++i)
-                {
-                    var id_input = $('#listinputptramassage').children(':input').attr('id');
-                     $('#listinputptramassage').children(':input').remove();
-                    //.console.log(array_input[i]);
-                    //ptramassage[i] = $('#listinputptramassage')
-                }
-            }
-            /*$(form).ajaxSubmit({
+            $(form).ajaxSubmit({
                 method: "POST",
                 url: "ajax/creeroffre.php",
-                data: {
-
-                }
-            }),
-            success: alertNouvelleOffre*/
+                data: $(form).serialize(),
+                success: alertNouvelleOffre
+            });
         }
     });
 
 function alertNouvelleOffre(data)
 {
-
+    alert(data);
 }
     /***************************************** Page inscription*******************************/
     $("#forminscription").validate({
